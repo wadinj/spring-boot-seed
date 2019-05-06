@@ -37,6 +37,6 @@ public class HelloControllerTests {
     public void whenCallingGetPost_thenReturnsAllPosts() {
 
         ResponseEntity<String> response = template.getForEntity(baseUrl.toString(), String.class);
-        assertThat(response.getBody(), equalTo("Hello World!"));
+        assertThat(response.getBody(), equalTo("Hello Wo,rld!"));
     }
 }
